@@ -1,6 +1,19 @@
+.skiptocontent a  {
+	top:-40px;
+	transition: top 1s ease-out;
+}
+
+
 header, footer{
 	font-family: arial;
 }
+
+header{
+	flex-direction: row;
+    justify-content: space-between;
+    min-height: auto;
+    align-items: center;
+} 
 
 nav a {
 	color:purple;
@@ -26,6 +39,28 @@ section{
 	padding: 10px;
 }
 
-main img{
-	
+.container{
+	display:flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	/*flex-flow: <flex-wrap>*/
+	justify-content: flex-start;
+	align-items: flex-start;
+	align-content: flex-start;
+
 }
+
+.container{
+	display: grid;
+	grid-template-columns: 300px 500px 300px
+}
+/*main img{
+	
+}*/
+
+/*div {
+  width: 300px;
+  border: 25px solid green;
+  padding: 25px;
+  margin: 25px;
+}*/
