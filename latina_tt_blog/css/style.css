@@ -1,11 +1,6 @@
-.skiptocontent a  {
-	top:-40px;
-	transition: top 1s ease-out;
-}
-
 
 header, footer{
-	font-family: arial;
+	font-family: Noto Serif;
 }
 
 header{
@@ -17,7 +12,7 @@ header{
 
 nav a {
 	color:purple;
-	font-family: courier;
+	font-family: Noto Serif;
 	text-decoration: none;
 }
 .current{
@@ -39,28 +34,74 @@ section{
 	padding: 10px;
 }
 
-.container{
-	display:flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	/*flex-flow: <flex-wrap>*/
-	justify-content: flex-start;
-	align-items: flex-start;
-	align-content: flex-start;
-
+a.skip{
+	padding:10px;
+	text-decoration: none;
+	position: relative;
+    top: -40px;
+    transition: top ease-in 1s;
 }
 
-.container{
+a.skip:focus{
+	background: white;
+	top: 0px;
+	border: 1px solid black;
+}
+
+.gallery {
 	display: grid;
-	grid-template-columns: 300px 500px 300px
+	grid-template-columns: 1fr 1fr 1fr;
 }
-/*main img{
-	
-}*/
 
-/*div {
-  width: 300px;
-  border: 25px solid green;
-  padding: 25px;
-  margin: 25px;
+.gallery img{
+	width: 100%;
+	padding: 4px;
+	height: 35vh;
+	margin: 15px;
+}
+
+/*.gallery img{
+	display: flex;
+	flex-wrap: wrap;
+	flex: 50%;
+	padding: 4px;
+	height: 35vh;
+	margin: 15px;
+}
+*/
+/*desktop view*/
+/*@media screen and (min-width: 1200px){
+.gallery{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	}
+nav li {
+	margin: 1%;
+	padding: 1%;
+	display: inline-block;
+	background: transparent;
+	width: 15%;
+}
+}
+ipad screen
+@media screen and (min-width: 760px){
+	.gallery{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}*/
+/*}*/
+/*mobile screen*/
+/*@media screen and (min-width: 375px){
+	.gallery{
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+	nav li {
+		margin: 1%;
+		padding: 1%;
+		display: flex;
+		background: transparent;
+		width: 15%;
+}	
+	}
 }*/
