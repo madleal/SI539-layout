@@ -47,14 +47,12 @@ section{
 }
 
 body {
-	background-image: url("/images/wanderlust.jpg");
-	background-color: #cccccc;
-}
-/*	height:500px;
-	background-position: center;
-	background-repeat: no-repeat;
+	background-image: url("../images/wanderlust.jpg");
+	/*background-image: repeating-linear-gradient(red, yellow 10%, green 20%);*/
+	/*background-color: #cccccc;*/
 	background-size: cover;
-}*/
+
+}
 
 a.skip-main {
     left:-999px;
