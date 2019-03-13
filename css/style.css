@@ -24,7 +24,7 @@ header{
 nav a {
 	color: purple;
 	font-family: Archivo;
-	font-size: 20px;
+	font-size: 70px;
 	text-decoration: none;
 }
 .current{
@@ -36,39 +36,35 @@ nav li {
 	margin: 1%;
 	padding: 1%;
 	display: block;
+	align-content: center;
+	text-align: center;
 	background: lightblue;
-	/*width: 100%;*/
+	width: 100%;
 }
 
 section{
 	border: 1px solid black;
 	margin-top: 20px;
 	padding: 10px;
+	font-size: 50px;
 }
 
-/*body {
-	background-image: url("../images/wanderlustcopy.jpg");
-	background-image: repeating-linear-gradient(red, yellow 10%, green 20%);
-	background-color: #cccccc;
-	background-size: cover;
-
-}*/
 
 a.skip-main {
-    left:-999px;
+    left:-40px;
     position:absolute;
     top:auto;
     width:1px;
     height:1px;
     overflow:hidden;
-    z-index:-999;
+    z-index:-40;
 }
 a.skip-main:focus, a.skip-main:active {
     color: #fff;
     background-color:#000;
     left: auto;
     top: auto;
-    width: 30%;
+    width: 20%;
     height: auto;
     overflow:auto;
     margin: 10px 35%;
@@ -81,22 +77,15 @@ a.skip-main:focus, a.skip-main:active {
 }
 
 .gallery {
-	display: flex;
-	grid-column-gap: 15px;
+	display: grid;
+	/*grid-column-gap: 12px;*/
+	grid-gap: 10px;
 	grid-template-columns: 1fr;
+
 }
 
-/*.gallery img{
-	width: 100%;
-	padding: 5px;
-	height: 35vh;
-	margin: 15px;
-}*/
-
 .gallery img{
-	display: flex;
-	flex-wrap: wrap;
-	flex: 50%;
+	width:100%;
 	padding: 10px;
 	height: 35vh;
 	margin: 15px;
@@ -108,26 +97,35 @@ a.skip-main:focus, a.skip-main:active {
 
 }
 
-/*desktop view*/
-@media screen and (min-width: 1200px){
-	.gallery{
-		display: grid;
-		grid-template-columns: 1fr 1fr 1fr;
-	}
-	nav li {
-		margin: 1%;
-		padding: 1%;
-		display: inline-block;
-		background: lightblue;
-		width: 15%;
-	}
-}
-/*ipad screen
+
+/*ipad view*/
 @media screen and (min-width: 760px){
 	.gallery{
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 	}
+}	
 
-            
+/*desktop view*/
+@media screen and (min-width: 1000px){
+	.gallery{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+	}
 
+	nav li {
+	margin: 1%;
+	padding: 1%;
+	display: inline;
+	align-content: center;	
+	background: lightblue;
+	width: 100%;
+	font-size: 40px;
+}
+	nav a {
+	color: purple;
+	font-family: Archivo;
+	font-size: 40px;
+	text-decoration: none;
+}
+	          
